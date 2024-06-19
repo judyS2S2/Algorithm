@@ -29,7 +29,9 @@ def bfs(x, y):
 
     # 큐가 빌 때까지 순회
     while queue:
+        # 큐의 첫번째 요소 꺼내서 x, y에 저장
         x, y = queue.popleft()
+        # 각 단지 크기 1 증가
         each += 1
 
         # 네 방향 (동/서/남/북)에 대해 탐색 수행
