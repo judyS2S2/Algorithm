@@ -1,4 +1,4 @@
-### 백준 1697. 숨바꼭질
+### 백준 2178. 미로 탐색
 import sys
 from collections import deque
 input = sys.stdin.readline
