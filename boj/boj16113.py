@@ -5,9 +5,9 @@ import sys
 input = sys.stdin.readline
 
 # 시그널 길이 n 입력받기
-n = int(input())
+n = int(input().strip())
 # 시그널 데이터 입력받기
-signal = input()
+signal = input().strip()
 # 시그널 5등분 한 열의 길이 m 계산
 m = n // 5
 # 임시로 시그널의 각 부분을 저장할 문자열
