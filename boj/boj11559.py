@@ -7,7 +7,6 @@ input = sys.stdin.readline
 # 동서남북 방향 정의
 dx = [1, -1, 0, 0]
 dy = [0, 0, 1, -1]
-
 # 12x6 크기의 필드 정보 입력받기
 board = [list(input().rstrip()) for _ in range(12)]
 # 연쇄 횟수
