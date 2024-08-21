@@ -18,7 +18,7 @@ for i in range(2, 5001, 2):
     # 부분 문자열들을 분할해서 dp값을 계산
     for j in range(2, i + 1, 2):
         # dp 점화식
-        dp[i] += (dp[i - 2] * dp[i - j]) % 1000000007
+        dp[i] += (dp[j - 2] * dp[i - j]) % 1000000007
 
 # 각 테스트 케이스에 대해
 for i in l:
