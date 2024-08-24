@@ -12,7 +12,7 @@ def solution(triangle):
                 # 바로 위 요소만 더함 (첫번째 요소)
                 triangle[i][j] += triangle[i - 1][0]
             # 현재 요소가 줄의 마지막 요소이면
-            elif j == len(triangle[i] - 1):
+            elif j == len(triangle[i]) - 1:
                 # 바로 위 요소만 더함 (마지막 요소)
                 triangle[i][j] += triangle[i - 1][-1]
             else: # 그 외 경우
@@ -21,3 +21,5 @@ def solution(triangle):
 
     # 마지막 줄에서 가장 큰 값 반환
     return max(triangle[-1])
+
+# print(solution([[7], [3, 8], [8, 1, 0], [2, 7, 4, 4], [4, 5, 2, 6, 5]]))
